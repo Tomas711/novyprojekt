@@ -38,7 +38,7 @@ public interface IInformace {
 	 * 
 	 * @return		int
 	 */
-	int getNumberOfNoneWhite();
+	int getNumberOfNoWhite();
 	
 	/**
 	 * Vrací počet všech znaků ve daném dokumentu.
