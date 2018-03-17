@@ -12,7 +12,7 @@ import java.io.IOException;
 public interface IInformace {
 	
 	/**
-	 * Přiřadí k dokumenu cestu
+	 * Přiřadí k dokumentu cestu
 	 * 
 	 * @param path		textový řetezec cesta k dokumentu
 	 * @throws IOException		jakákoli chyba s dokumentem
@@ -23,28 +23,32 @@ public interface IInformace {
 	 * Vrací počet všech řádků, co jsou ve dokumentu.
 	 * 
 	 * @return		int
+	 * @throws IOException 
 	 */
-	int getNumberOfLines();
+	int getNumberOfLines() throws IOException;
 	
 	/**
 	 * Vrací počet všech slov, které jsou v dokumentu.
 	 * 
 	 * @return		int
+	 * @throws IOException 
 	 */
-	int getNumberOfWords();
+	int getNumberOfWords() throws IOException;
 	
 	/**
 	 * Vrací počet všech no-whitespace znaků, které jsou v dokumentu.
 	 * 
 	 * @return		int
+	 * @throws IOException 
 	 */
-	int getNumberOfNoWhite();
+	int getNumberOfNoWhite() throws IOException;
 	
 	/**
 	 * Vrací počet všech znaků ve daném dokumentu.
 	 * 
 	 * @return		int
+	 * @throws IOException 
 	 */
-	int getNumberOfAllChar();
+	int getNumberOfAllChar() throws IOException;
 
 }
