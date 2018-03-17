@@ -39,8 +39,7 @@ public class Frame extends JFrame {
 	private JLabel allLabel;
 	private JTextField allField;
 
-	private Frame() {
-		
+	private Frame() {		
 		/*
 		 * Hlavní panel
 		 */
@@ -120,8 +119,8 @@ public class Frame extends JFrame {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			String path = pathField.getText();
 			try {
+				String path = pathField.getText();
 				info.setPathToFile(path);
 				
 				lineField.setText(""+info.getNumberOfLines());
