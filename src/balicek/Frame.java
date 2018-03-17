@@ -19,6 +19,8 @@ public class Frame extends JFrame {
 	
 	private IInformace info;
 	
+	
+	
 	private Font font = new Font("Tahoma", Font.PLAIN, 16);
 	
 	private JTextField pathField;
