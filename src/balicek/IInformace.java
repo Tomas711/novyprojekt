@@ -1,6 +1,6 @@
 package balicek;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 /**
  * Interface slouží ke třídě Informace
@@ -15,9 +15,9 @@ public interface IInformace {
 	 * Přiřadí k dokumenu cestu
 	 * 
 	 * @param path		textový řetezec cesta k dokumentu
-	 * @throws FileNotFoundException		když se dokument nenajde
+	 * @throws IOException		jakákoli chyba s dokumentem
 	 */
-	void setPathToFile(String path) throws FileNotFoundException;
+	void setPathToFile(String path) throws IOException;
 	
 	/**
 	 * Vrací počet všech řádků, co jsou ve dokumentu.

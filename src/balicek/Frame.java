@@ -4,6 +4,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import javax.swing.*;
 
@@ -121,7 +122,6 @@ public class Frame extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 			String path = pathField.getText();
 			try {
-				
 				info.setPathToFile(path);
 				
 				lineField.setText(""+info.getNumberOfLines());
@@ -129,7 +129,7 @@ public class Frame extends JFrame {
 				noneField.setText(""+info.getNumberOfNoWhite());
 				allField.setText(""+info.getNumberOfAllChar());
 				
-			} catch (FileNotFoundException e1) {
+			} catch (IOException e1) {
 				e1.printStackTrace();
 			}
 		}
