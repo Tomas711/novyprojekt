@@ -2,6 +2,12 @@ package balicek;
 
 import java.io.*;
 
+/**
+ * 
+ * @author Tomáš Rousek
+ * @version 1.0
+ *
+ */
 public class Function implements IInformace {
 	
 	private File file;
